@@ -5,7 +5,7 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-class Crawl_with_code:
+class CrawlWithCode:
     
     def __init__(self, code, BASE_URL='https://finance.naver.com/item/board.nhn?code='):
         """

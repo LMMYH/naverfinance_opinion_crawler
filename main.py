@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 import pandas as pd
-from opinion_crawler import Crawl_with_code
+from opinion_crawler import CrawlWithCode
 
 def argparser():
     p = argparse.ArgumentParser()
@@ -21,7 +21,7 @@ def argparser():
 def main():
     config = argparser()
 
-    crawler = Crawl_with_code(config.code)
+    crawler = CrawlWithCode(config.code)
     for i in range(config.maxpage):
         crawler.page_saver(i)
         show_status =  "현재 {} 페이지 진행 중".format(i+1)
