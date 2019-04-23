@@ -18,7 +18,7 @@ python main.py [args]
 
 - `COMPANY_NAME` 엑셀파일명에 들어갈 회사 이름
 
-### 2.사용 예시:
+### 2. 사용 예시:
 ```
 python main.py --code 005930 --DIR C:\\Users\\Username\\Dir1\\ --maxpage 100 --company_name SamsungElectronics
 
@@ -29,3 +29,13 @@ python main.py --code 005930 --DIR C:\\Users\\Username\\Dir1\\ --maxpage 100 --c
 ```
 - `C:\\Users\\Username\\Dir1\\yyyymmdd_hh_mm_ss_COMPANY_NAME.xlsx` 해당 경로에 엑셀파일 생성됨
 
+### 4. 추가 설치해야 할 패키지:
+- BeautifulSoup, Requests
+```
+pip install beautifulsoup4
+pip install requests
+```
+- 엑셀 파일 저장엔진
+```
+pip install xlsxwriter
+```
